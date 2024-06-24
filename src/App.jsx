@@ -2,13 +2,14 @@
 import './App.css'
 import Sidebar from './Sidebar'
 import Topbar from './Topbar'
-import Dashboard from './Dashboard';
+import Dashboard from './Dashboard'
+
 import {
   BrowserRouter,
   Switch,
   Route,
-  Link
 } from 'react-router-dom';
+import Table from './Table';
 
 
 
@@ -24,7 +25,8 @@ function App() {
           <Topbar/>
           <div className="container-fluid">
             <Switch>
-              <Route exact={true} path="/" component={Dashboard}/>
+              <Route exact={true} path="/" component={Dashboard} />
+              <Route exact={true} path = "/tables" component={Table} />
             </Switch>
             
           </div>
